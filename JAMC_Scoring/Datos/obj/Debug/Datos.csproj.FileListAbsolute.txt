@@ -1,0 +1,7 @@
+D:\JAMC_Scoring\Datos\bin\Debug\Datos.dll
+D:\JAMC_Scoring\Datos\bin\Debug\Datos.pdb
+D:\JAMC_Scoring\Datos\bin\Debug\Entidades.dll
+D:\JAMC_Scoring\Datos\bin\Debug\Entidades.pdb
+D:\JAMC_Scoring\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+D:\JAMC_Scoring\Datos\obj\Debug\Datos.dll
+D:\JAMC_Scoring\Datos\obj\Debug\Datos.pdb

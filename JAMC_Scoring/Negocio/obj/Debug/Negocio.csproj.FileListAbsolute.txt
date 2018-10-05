@@ -1,0 +1,9 @@
+D:\JAMC_Scoring\Negocio\bin\Debug\Negocio.dll
+D:\JAMC_Scoring\Negocio\bin\Debug\Negocio.pdb
+D:\JAMC_Scoring\Negocio\bin\Debug\Datos.dll
+D:\JAMC_Scoring\Negocio\bin\Debug\Entidades.dll
+D:\JAMC_Scoring\Negocio\bin\Debug\Datos.pdb
+D:\JAMC_Scoring\Negocio\bin\Debug\Entidades.pdb
+D:\JAMC_Scoring\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+D:\JAMC_Scoring\Negocio\obj\Debug\Negocio.dll
+D:\JAMC_Scoring\Negocio\obj\Debug\Negocio.pdb
