@@ -78,22 +78,54 @@
     <Content Include="Readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Funciones\Utilitario.cs" />
+    <Compile Include="Pantallas\Frm_Cambiar_Clave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Pantallas\Frm_Cambiar_Clave.designer.cs">
+      <DependentUpon>Frm_Cambiar_Clave.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Funciones\Utilitario.cs" />
+    <Compile Include="Pantallas\Frm_Garantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Garantia.designer.cs">
+      <DependentUpon>Frm_Garantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Gasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Gasto.designer.cs">
+      <DependentUpon>Frm_Gasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Ingreso.designer.cs">
+      <DependentUpon>Frm_Ingreso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\Frm_Login.designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Garantias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Garantias.designer.cs">
+      <DependentUpon>Frm_Mant_Garantias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Gastos.designer.cs">
+      <DependentUpon>Frm_Mant_Gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Ingresos.designer.cs">
+      <DependentUpon>Frm_Mant_Ingresos.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Frm_Mant_Tipos_Calificaciones.cs">
       <SubType>Form</SubType>
@@ -132,8 +164,29 @@
       <DependentUpon>Frm_Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Pantallas\Frm_Cambiar_Clave.resx">
+      <DependentUpon>Frm_Cambiar_Clave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Garantia.resx">
+      <DependentUpon>Frm_Garantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Gasto.resx">
+      <DependentUpon>Frm_Gasto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Ingreso.resx">
+      <DependentUpon>Frm_Ingreso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Mant_Garantias.resx">
+      <DependentUpon>Frm_Mant_Garantias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Mant_Gastos.resx">
+      <DependentUpon>Frm_Mant_Gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Mant_Ingresos.resx">
+      <DependentUpon>Frm_Mant_Ingresos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Mant_Tipos_Calificaciones.resx">
       <DependentUpon>Frm_Mant_Tipos_Calificaciones.cs</DependentUpon>

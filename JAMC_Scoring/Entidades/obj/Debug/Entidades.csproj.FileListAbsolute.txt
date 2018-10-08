@@ -2,4 +2,3 @@ D:\JAMC_Scoring\Entidades\bin\Debug\Entidades.dll
 D:\JAMC_Scoring\Entidades\bin\Debug\Entidades.pdb
 D:\JAMC_Scoring\Entidades\obj\Debug\Entidades.dll
 D:\JAMC_Scoring\Entidades\obj\Debug\Entidades.pdb
-D:\JAMC_Scoring\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

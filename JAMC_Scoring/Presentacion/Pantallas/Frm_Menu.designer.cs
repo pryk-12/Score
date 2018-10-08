@@ -35,7 +35,9 @@ namespace Presentacion.Pantallas
             this.btn_usuario = new Gizmox.WebGUI.Forms.Button();
             this.cm_usuario = new Gizmox.WebGUI.Forms.ContextMenu();
             this.mn_cambiar_clave = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem3 = new Gizmox.WebGUI.Forms.MenuItem();
             this.mn_cerrar_sesion = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem4 = new Gizmox.WebGUI.Forms.MenuItem();
             this.mn_actualizar_menu = new Gizmox.WebGUI.Forms.MenuItem();
             this.btn_proceso = new Gizmox.WebGUI.Forms.Button();
             this.cm_procesos = new Gizmox.WebGUI.Forms.ContextMenu();
@@ -44,7 +46,14 @@ namespace Presentacion.Pantallas
             this.btn_mantenimiento = new Gizmox.WebGUI.Forms.Button();
             this.cm_mantenimientos = new Gizmox.WebGUI.Forms.ContextMenu();
             this.mn_calificacion_cliente = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem5 = new Gizmox.WebGUI.Forms.MenuItem();
+            this.mn_tipos_gastos = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem1 = new Gizmox.WebGUI.Forms.MenuItem();
+            this.mn_garantias = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem2 = new Gizmox.WebGUI.Forms.MenuItem();
             this.mn_usuarios = new Gizmox.WebGUI.Forms.MenuItem();
+            this.mn_tipos_ingresos = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem6 = new Gizmox.WebGUI.Forms.MenuItem();
             this.pnl_izquierdo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,23 +95,36 @@ namespace Presentacion.Pantallas
             // 
             this.cm_usuario.MenuItems.AddRange(new Gizmox.WebGUI.Forms.MenuItem[] {
             this.mn_cambiar_clave,
+            this.menuItem3,
             this.mn_cerrar_sesion,
+            this.menuItem4,
             this.mn_actualizar_menu});
             // 
             // mn_cambiar_clave
             // 
             this.mn_cambiar_clave.Index = 0;
             this.mn_cambiar_clave.Text = "Cambiar Clave";
+            this.mn_cambiar_clave.Click += new System.EventHandler(this.mn_cambiar_clave_Click);
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 1;
+            this.menuItem3.Text = "-";
             // 
             // mn_cerrar_sesion
             // 
-            this.mn_cerrar_sesion.Index = 1;
+            this.mn_cerrar_sesion.Index = 2;
             this.mn_cerrar_sesion.Text = "Cerrar Sesión";
             this.mn_cerrar_sesion.Click += new System.EventHandler(this.mn_cerrar_sesion_Click);
             // 
+            // menuItem4
+            // 
+            this.menuItem4.Index = 3;
+            this.menuItem4.Text = "-";
+            // 
             // mn_actualizar_menu
             // 
-            this.mn_actualizar_menu.Index = 2;
+            this.mn_actualizar_menu.Index = 4;
             this.mn_actualizar_menu.Text = "Actualizar Menu";
             // 
             // btn_proceso
@@ -170,19 +192,64 @@ namespace Presentacion.Pantallas
             // 
             this.cm_mantenimientos.MenuItems.AddRange(new Gizmox.WebGUI.Forms.MenuItem[] {
             this.mn_calificacion_cliente,
+            this.menuItem5,
+            this.mn_tipos_gastos,
+            this.menuItem1,
+            this.mn_garantias,
+            this.menuItem2,
+            this.mn_tipos_ingresos,
+            this.menuItem6,
             this.mn_usuarios});
             // 
             // mn_calificacion_cliente
             // 
             this.mn_calificacion_cliente.Index = 0;
-            this.mn_calificacion_cliente.Text = "Tipos Calificaciones";
+            this.mn_calificacion_cliente.Text = "Tipos de Calificaciones";
             this.mn_calificacion_cliente.Click += new System.EventHandler(this.mn_calificacion_cliente_Click);
+            // 
+            // menuItem5
+            // 
+            this.menuItem5.Index = 1;
+            this.menuItem5.Text = "-";
+            // 
+            // mn_tipos_gastos
+            // 
+            this.mn_tipos_gastos.Index = 2;
+            this.mn_tipos_gastos.Text = "Tipos de Gastos";
+            this.mn_tipos_gastos.Click += new System.EventHandler(this.mn_tipos_gastos_Click);
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 3;
+            this.menuItem1.Text = "-";
+            // 
+            // mn_garantias
+            // 
+            this.mn_garantias.Index = 4;
+            this.mn_garantias.Text = "Tipos de Gatantías";
+            this.mn_garantias.Click += new System.EventHandler(this.mn_garantias_Click);
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 5;
+            this.menuItem2.Text = "-";
             // 
             // mn_usuarios
             // 
-            this.mn_usuarios.Index = 1;
+            this.mn_usuarios.Index = 8;
             this.mn_usuarios.Text = "Usuarios";
             this.mn_usuarios.Click += new System.EventHandler(this.mn_usuarios_Click);
+            // 
+            // mn_tipos_ingresos
+            // 
+            this.mn_tipos_ingresos.Index = 6;
+            this.mn_tipos_ingresos.Text = "Tipos de Ingresos";
+            this.mn_tipos_ingresos.Click += new System.EventHandler(this.mn_tipos_ingresos_Click);
+            // 
+            // menuItem6
+            // 
+            this.menuItem6.Index = 7;
+            this.menuItem6.Text = "-";
             // 
             // Frm_Menu
             // 
@@ -190,6 +257,7 @@ namespace Presentacion.Pantallas
             this.IsMdiContainer = true;
             this.Size = new System.Drawing.Size(883, 539);
             this.Load += new System.EventHandler(this.Frm_Menu_Load);
+            this.Activated += new System.EventHandler(this.Frm_Menu_Activated);
             this.pnl_izquierdo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -212,5 +280,14 @@ namespace Presentacion.Pantallas
         private Gizmox.WebGUI.Forms.MenuItem mn_cerrar_sesion;
         private Gizmox.WebGUI.Forms.MenuItem mn_actualizar_menu;
         private Gizmox.WebGUI.Forms.MenuItem mn_usuarios;
+        private Gizmox.WebGUI.Forms.MenuItem mn_garantias;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem1;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem2;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem3;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem4;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem5;
+        private Gizmox.WebGUI.Forms.MenuItem mn_tipos_gastos;
+        private Gizmox.WebGUI.Forms.MenuItem mn_tipos_ingresos;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem6;
 	}
 }

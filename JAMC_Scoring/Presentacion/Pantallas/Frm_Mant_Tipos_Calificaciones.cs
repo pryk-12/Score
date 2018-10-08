@@ -1,11 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-
-using Presentacion.Pantallas;
 using Negocio;
 using Entidades;
 
@@ -50,7 +43,7 @@ namespace Presentacion.Pantallas
             E_Tipo_Calificacion obj = new E_Tipo_Calificacion();
             obj._DESCRIPCION = dg.CurrentRow.Cells["DESCRIPCION"].Value.ToString();
             obj._ESTADO = dg.CurrentRow.Cells["ESTADO"].Value.ToString();
-            obj._ID_TIPO_CALIFICACION = Convert.ToInt32(dg.CurrentRow.Cells["ID"].Value.ToString());
+            obj._ID_TIPO_CALIFICACION = Convert.ToInt32(dg.CurrentRow.Cells["_ID"].Value.ToString());
             obj._PUNTOS = Convert.ToDouble(dg.CurrentRow.Cells["PUNTOS"].Value.ToString());
             Frm_Tipo_Calificacion frm = new Frm_Tipo_Calificacion();
             frm.Recibir_Datos(obj);
@@ -64,7 +57,12 @@ namespace Presentacion.Pantallas
 
         private void Frm_Mant_Tipos_Calificaciones_Load(object sender, EventArgs e)
         {
-            dg.AutoGenerateColumns = false;  
+            dg.AutoGenerateColumns = false;
+            
+            if (Funciones.Utilitario.Datos_Usuarios.USUARIO == "")
+            {
+                this.Context.Redirect("Frm_Login.wgx");
+            }
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)

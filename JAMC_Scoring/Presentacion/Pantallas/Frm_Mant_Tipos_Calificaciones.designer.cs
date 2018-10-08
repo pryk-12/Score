@@ -43,7 +43,7 @@ namespace Presentacion.Pantallas
             this.panel1 = new Gizmox.WebGUI.Forms.Panel();
             this.PUNTOS = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.lbl_total = new Gizmox.WebGUI.Forms.Label();
-            this.ID = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
+            this._ID = new Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn();
             this.cb_buscar = new Gizmox.WebGUI.Forms.ComboBox();
             this.label1 = new Gizmox.WebGUI.Forms.Label();
             this.dg = new Gizmox.WebGUI.Forms.DataGridView();
@@ -81,10 +81,10 @@ namespace Presentacion.Pantallas
             // txt_buscar
             // 
             this.txt_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.txt_buscar.Location = new System.Drawing.Point(168, 63);
+            this.txt_buscar.Location = new System.Drawing.Point(168, 66);
             this.txt_buscar.Name = "txt_buscar";
             this.txt_buscar.Size = new System.Drawing.Size(220, 21);
-            this.txt_buscar.TabIndex = 2;
+            this.txt_buscar.TabIndex = 1;
             // 
             // btn_editar
             // 
@@ -134,16 +134,16 @@ namespace Presentacion.Pantallas
             this.lbl_total.Text = "0";
             this.lbl_total.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ID
+            // _ID
             // 
-            this.ID.DataPropertyName = "ID";
+            this._ID.DataPropertyName = "ID";
             dataGridViewCellStyle3.Alignment = Gizmox.WebGUI.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.FormatProvider = new System.Globalization.CultureInfo("es-DO");
-            this.ID.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 50;
+            this._ID.DefaultCellStyle = dataGridViewCellStyle3;
+            this._ID.HeaderText = "ID";
+            this._ID.Name = "_ID";
+            this._ID.ReadOnly = true;
+            this._ID.Width = 50;
             // 
             // cb_buscar
             // 
@@ -154,16 +154,16 @@ namespace Presentacion.Pantallas
             "",
             "ID",
             "DESCRIPCION"});
-            this.cb_buscar.Location = new System.Drawing.Point(59, 63);
+            this.cb_buscar.Location = new System.Drawing.Point(59, 66);
             this.cb_buscar.Name = "cb_buscar";
             this.cb_buscar.Size = new System.Drawing.Size(106, 21);
-            this.cb_buscar.TabIndex = 4;
+            this.cb_buscar.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(8, 67);
+            this.label1.Location = new System.Drawing.Point(8, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 3;
@@ -178,12 +178,12 @@ namespace Presentacion.Pantallas
             this.dg.Anchor = ((Gizmox.WebGUI.Forms.AnchorStyles)(((Gizmox.WebGUI.Forms.AnchorStyles.Bottom | Gizmox.WebGUI.Forms.AnchorStyles.Left) 
             | Gizmox.WebGUI.Forms.AnchorStyles.Right)));
             this.dg.Columns.AddRange(new Gizmox.WebGUI.Forms.DataGridViewColumn[] {
-            this.ID,
+            this._ID,
             this.DESCRIPCION,
             this.PUNTOS,
             this.ESTADO});
             dataGridViewCellStyle5.Alignment = Gizmox.WebGUI.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8.25F);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.FormatProvider = new System.Globalization.CultureInfo("es-DO");
@@ -197,7 +197,7 @@ namespace Presentacion.Pantallas
             this.dg.Name = "dg";
             this.dg.RowHeadersVisible = false;
             this.dg.SelectionMode = Gizmox.WebGUI.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dg.Size = new System.Drawing.Size(644, 320);
+            this.dg.Size = new System.Drawing.Size(644, 311);
             this.dg.TabIndex = 1;
             this.dg.Theme = "Vista";
             this.dg.DoubleClick += new System.EventHandler(this.dg_DoubleClick);
@@ -215,13 +215,13 @@ namespace Presentacion.Pantallas
             // btn_buscar
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btn_buscar.Image = new Gizmox.WebGUI.Common.Resources.ImageResourceHandle(resources.GetString("btn_buscar.Image"));
             this.btn_buscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_buscar.Location = new System.Drawing.Point(391, 62);
+            this.btn_buscar.Location = new System.Drawing.Point(389, 65);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(71, 23);
-            this.btn_buscar.TabIndex = 0;
+            this.btn_buscar.Size = new System.Drawing.Size(81, 23);
+            this.btn_buscar.TabIndex = 2;
             this.btn_buscar.Text = "  Buscar";
-            this.btn_buscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_buscar.TextImageRelation = Gizmox.WebGUI.Forms.TextImageRelation.ImageBeforeText;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
@@ -234,7 +234,7 @@ namespace Presentacion.Pantallas
             this.Controls.Add(this.lbl_total);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txt_buscar);
-            this.Size = new System.Drawing.Size(665, 431);
+            this.Size = new System.Drawing.Size(665, 416);
             this.Text = "Mantenimiento Tipos de Calificiones";
             this.Load += new System.EventHandler(this.Frm_Mant_Tipos_Calificaciones_Load);
             this.panel1.ResumeLayout(false);
@@ -252,7 +252,7 @@ namespace Presentacion.Pantallas
         private Gizmox.WebGUI.Forms.Panel panel1;
         private Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn PUNTOS;
         private Gizmox.WebGUI.Forms.Label lbl_total;
-        private Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn ID;
+        private Gizmox.WebGUI.Forms.DataGridViewTextBoxColumn _ID;
         private Gizmox.WebGUI.Forms.ComboBox cb_buscar;
         private Gizmox.WebGUI.Forms.Label label1;
         private Gizmox.WebGUI.Forms.DataGridView dg;

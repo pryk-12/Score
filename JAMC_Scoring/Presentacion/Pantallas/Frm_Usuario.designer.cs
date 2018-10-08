@@ -72,13 +72,13 @@ namespace Presentacion.Pantallas
             this.panel1.Dock = Gizmox.WebGUI.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(495, 48);
+            this.panel1.Size = new System.Drawing.Size(492, 48);
             this.panel1.TabIndex = 0;
             // 
             // txt_id
             // 
             this.txt_id.Anchor = ((Gizmox.WebGUI.Forms.AnchorStyles)((Gizmox.WebGUI.Forms.AnchorStyles.Top | Gizmox.WebGUI.Forms.AnchorStyles.Right)));
-            this.txt_id.Location = new System.Drawing.Point(377, 17);
+            this.txt_id.Location = new System.Drawing.Point(372, 17);
             this.txt_id.MaxLength = 50;
             this.txt_id.Name = "txt_id";
             this.txt_id.Size = new System.Drawing.Size(99, 20);
@@ -98,7 +98,7 @@ namespace Presentacion.Pantallas
             this.groupBox1.Controls.Add(this.txt_nombre);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = Gizmox.WebGUI.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(13, 50);
+            this.groupBox1.Location = new System.Drawing.Point(13, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(464, 143);
             this.groupBox1.TabIndex = 1;
@@ -215,7 +215,7 @@ namespace Presentacion.Pantallas
             // 
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Size = new System.Drawing.Size(495, 207);
+            this.Size = new System.Drawing.Size(492, 206);
             this.Load += new System.EventHandler(this.Frm_Usuario_Load);
             this.Activated += new System.EventHandler(this.Frm_Usuario_Activated);
             this.panel1.ResumeLayout(false);

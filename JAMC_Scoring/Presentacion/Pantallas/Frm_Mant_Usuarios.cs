@@ -40,7 +40,12 @@ namespace Presentacion.Pantallas
 
         private void Frm_Mant_Usuarios_Load(object sender, EventArgs e)
         {
-            dg.AutoGenerateColumns = false;          
+            dg.AutoGenerateColumns = false;
+            
+            if (Funciones.Utilitario.Datos_Usuarios.USUARIO == "")
+            {
+                this.Context.Redirect("Frm_Login.wgx");
+            }
         }
 
         private void btn_buscar_Click(object sender, EventArgs e)
@@ -57,7 +62,7 @@ namespace Presentacion.Pantallas
             E_Usuario obj = new E_Usuario();
             obj._CLAVE = Funciones.Utilitario.Desencriptar_Clave(dg.CurrentRow.Cells["CLAVE"].Value.ToString());
             obj._ESTADO = dg.CurrentRow.Cells["ESTADO"].Value.ToString();
-            obj._ID_USUARIO = Convert.ToInt32(dg.CurrentRow.Cells["ID"].Value.ToString());
+            obj._ID_USUARIO = Convert.ToInt32(dg.CurrentRow.Cells["_ID"].Value.ToString());
             obj._NOMBRE = dg.CurrentRow.Cells["NOMBRE"].Value.ToString();
             obj._SEXO = dg.CurrentRow.Cells["SEXO"].Value.ToString();
             obj._USUARIO = dg.CurrentRow.Cells["USUARIO"].Value.ToString();

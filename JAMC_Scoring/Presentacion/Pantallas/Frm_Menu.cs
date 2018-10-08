@@ -1,11 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using Presentacion.Pantallas;
 using Gizmox.WebGUI.Forms;
 
 namespace Presentacion.Pantallas
@@ -38,7 +31,7 @@ namespace Presentacion.Pantallas
                 pnl_izquierdo.Width = 189;
                 btn_mantenimiento.Text = "  Mantenimientos";
                 btn_proceso.Text = "  Procesos";
-                btn_usuario.Text = "  ";
+                btn_usuario.Text = "     " + Funciones.Utilitario.Datos_Usuarios.USUARIO;
             }
         }
 
@@ -73,6 +66,34 @@ namespace Presentacion.Pantallas
         private void mn_calificacion_cliente_Click(object sender, EventArgs e)
         {
             Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Tipos_Calificaciones));
+        }
+
+        private void Frm_Menu_Activated(object sender, EventArgs e)
+        {
+            if (Funciones.Utilitario.Datos_Usuarios.USUARIO == "")
+            {
+                this.Context.Redirect("Frm_Login.wgx");
+            }
+        }
+
+        private void mn_garantias_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Garantias));
+        }
+
+        private void mn_cambiar_clave_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Cambiar_Clave));
+        }
+
+        private void mn_tipos_gastos_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Gastos));
+        }
+
+        private void mn_tipos_ingresos_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Ingresos));
         }
 
 

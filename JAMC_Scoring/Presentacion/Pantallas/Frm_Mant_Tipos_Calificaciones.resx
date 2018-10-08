@@ -123,4 +123,7 @@
   <data name="btn_editar.Image" xml:space="preserve">
     <value>Edit.png</value>
   </data>
+  <data name="btn_buscar.Image" xml:space="preserve">
+    <value>Search_3.png</value>
+  </data>
 </root>

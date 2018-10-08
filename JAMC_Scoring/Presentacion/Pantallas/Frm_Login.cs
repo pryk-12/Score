@@ -1,11 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-
-using Presentacion.Pantallas;
 using Gizmox.WebGUI.Forms;
 using Negocio;
 
@@ -62,6 +55,8 @@ namespace Presentacion.Pantallas
             else
             {
                 Funciones.Utilitario.Mensaje_Informacion("Este Usuario no Existe o Esta Inactivo");
+                txt_clave.Clear();
+                txt_usuario.Clear();
             }
         }
 
