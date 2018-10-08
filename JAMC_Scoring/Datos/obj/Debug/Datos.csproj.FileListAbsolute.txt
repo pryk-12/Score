@@ -5,3 +5,10 @@ D:\JAMC_Scoring\Datos\bin\Debug\Entidades.pdb
 D:\JAMC_Scoring\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 D:\JAMC_Scoring\Datos\obj\Debug\Datos.dll
 D:\JAMC_Scoring\Datos\obj\Debug\Datos.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Datos\bin\Debug\Datos.dll
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Datos\bin\Debug\Datos.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Datos\bin\Debug\Entidades.dll
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Datos\bin\Debug\Entidades.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Datos\obj\Debug\Datos.dll
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Datos\obj\Debug\Datos.pdb

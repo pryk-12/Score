@@ -31,6 +31,7 @@ namespace Presentacion.Pantallas
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Plantilla));
             this.SuspendLayout();
             // 
             // Frm_Plantilla
@@ -38,6 +39,7 @@ namespace Presentacion.Pantallas
             this.BackColor = System.Drawing.Color.White;
             this.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = Gizmox.WebGUI.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = new Gizmox.WebGUI.Common.Resources.IconResourceHandle(resources.GetString("$this.Icon"));
             this.MaximizeBox = false;
             this.Size = new System.Drawing.Size(419, 466);
             this.StartPosition = Gizmox.WebGUI.Forms.FormStartPosition.CenterScreen;

@@ -7,3 +7,12 @@ D:\JAMC_Scoring\Negocio\bin\Debug\Entidades.pdb
 D:\JAMC_Scoring\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 D:\JAMC_Scoring\Negocio\obj\Debug\Negocio.dll
 D:\JAMC_Scoring\Negocio\obj\Debug\Negocio.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\bin\Debug\Negocio.dll
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\bin\Debug\Negocio.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\bin\Debug\Datos.dll
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\bin\Debug\Entidades.dll
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\bin\Debug\Datos.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\bin\Debug\Entidades.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\obj\Debug\Negocio.dll
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Negocio\obj\Debug\Negocio.pdb
