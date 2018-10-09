@@ -86,6 +86,12 @@
     <Compile Include="Pantallas\Frm_Cambiar_Clave.designer.cs">
       <DependentUpon>Frm_Cambiar_Clave.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Frm_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Cliente.designer.cs">
+      <DependentUpon>Frm_Cliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Frm_Garantia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,12 @@
     <Compile Include="Pantallas\Frm_Login.designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Clientes.designer.cs">
+      <DependentUpon>Frm_Mant_Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Frm_Mant_Garantias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +139,12 @@
     </Compile>
     <Compile Include="Pantallas\Frm_Mant_Ingresos.designer.cs">
       <DependentUpon>Frm_Mant_Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Sectores_Economicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Mant_Sectores_Economicos.designer.cs">
+      <DependentUpon>Frm_Mant_Sectores_Economicos.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Frm_Mant_Tipos_Calificaciones.cs">
       <SubType>Form</SubType>
@@ -152,6 +170,12 @@
     <Compile Include="Pantallas\Frm_Plantilla.Designer.cs">
       <DependentUpon>Frm_Plantilla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Frm_Sector_Economico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Sector_Economico.designer.cs">
+      <DependentUpon>Frm_Sector_Economico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Frm_Tipo_Calificacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +192,9 @@
     <EmbeddedResource Include="Pantallas\Frm_Cambiar_Clave.resx">
       <DependentUpon>Frm_Cambiar_Clave.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Cliente.resx">
+      <DependentUpon>Frm_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Garantia.resx">
       <DependentUpon>Frm_Garantia.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +207,9 @@
     <EmbeddedResource Include="Pantallas\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Mant_Clientes.resx">
+      <DependentUpon>Frm_Mant_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Mant_Garantias.resx">
       <DependentUpon>Frm_Mant_Garantias.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Mant_Ingresos.resx">
       <DependentUpon>Frm_Mant_Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Mant_Sectores_Economicos.resx">
+      <DependentUpon>Frm_Mant_Sectores_Economicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Mant_Tipos_Calificaciones.resx">
       <DependentUpon>Frm_Mant_Tipos_Calificaciones.cs</DependentUpon>
@@ -201,6 +234,9 @@
     <EmbeddedResource Include="Pantallas\Frm_Plantilla.resx">
       <DependentUpon>Frm_Plantilla.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Sector_Economico.resx">
+      <DependentUpon>Frm_Sector_Economico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Tipo_Calificacion.resx">
       <DependentUpon>Frm_Tipo_Calificacion.cs</DependentUpon>

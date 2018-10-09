@@ -97,7 +97,7 @@ namespace Presentacion.Pantallas
             this.groupBox1.Controls.Add(this.txt_descripcion);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = Gizmox.WebGUI.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(9, 50);
+            this.groupBox1.Location = new System.Drawing.Point(9, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(469, 97);
             this.groupBox1.TabIndex = 1;
@@ -167,7 +167,7 @@ namespace Presentacion.Pantallas
             // 
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Size = new System.Drawing.Size(488, 156);
+            this.Size = new System.Drawing.Size(488, 162);
             this.Load += new System.EventHandler(this.Frm_Ingreso_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

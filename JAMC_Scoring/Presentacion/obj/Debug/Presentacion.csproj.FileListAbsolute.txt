@@ -96,4 +96,7 @@ C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Present
 C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.dll
 C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.pdb
-C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.Form1.resources
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.Pantallas.Frm_Mant_Sectores_Economicos.resources
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.Pantallas.Frm_Sector_Economico.resources
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.Pantallas.Frm_Cliente.resources
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Presentacion\obj\Debug\Presentacion.Pantallas.Frm_Mant_Clientes.resources

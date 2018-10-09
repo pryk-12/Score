@@ -96,6 +96,16 @@ namespace Presentacion.Pantallas
             Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Ingresos));
         }
 
+        private void mn_sectores_economicos_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Sectores_Economicos));
+        }
+
+        private void mn_clientes_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Clientes));
+        }
+
 
 	}
 }

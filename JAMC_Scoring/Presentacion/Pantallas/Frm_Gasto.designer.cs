@@ -139,7 +139,7 @@ namespace Presentacion.Pantallas
             // 
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Size = new System.Drawing.Size(485, 167);
+            this.Size = new System.Drawing.Size(485, 170);
             this.Load += new System.EventHandler(this.Frm_Gasto_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

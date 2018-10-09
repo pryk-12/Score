@@ -215,7 +215,7 @@ namespace Presentacion.Pantallas
             // 
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Size = new System.Drawing.Size(492, 206);
+            this.Size = new System.Drawing.Size(492, 208);
             this.Load += new System.EventHandler(this.Frm_Usuario_Load);
             this.Activated += new System.EventHandler(this.Frm_Usuario_Activated);
             this.panel1.ResumeLayout(false);

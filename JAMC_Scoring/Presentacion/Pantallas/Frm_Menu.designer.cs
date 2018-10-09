@@ -51,9 +51,13 @@ namespace Presentacion.Pantallas
             this.menuItem1 = new Gizmox.WebGUI.Forms.MenuItem();
             this.mn_garantias = new Gizmox.WebGUI.Forms.MenuItem();
             this.menuItem2 = new Gizmox.WebGUI.Forms.MenuItem();
-            this.mn_usuarios = new Gizmox.WebGUI.Forms.MenuItem();
             this.mn_tipos_ingresos = new Gizmox.WebGUI.Forms.MenuItem();
             this.menuItem6 = new Gizmox.WebGUI.Forms.MenuItem();
+            this.mn_sectores_economicos = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem7 = new Gizmox.WebGUI.Forms.MenuItem();
+            this.mn_usuarios = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem8 = new Gizmox.WebGUI.Forms.MenuItem();
+            this.mn_clientes = new Gizmox.WebGUI.Forms.MenuItem();
             this.pnl_izquierdo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -199,7 +203,11 @@ namespace Presentacion.Pantallas
             this.menuItem2,
             this.mn_tipos_ingresos,
             this.menuItem6,
-            this.mn_usuarios});
+            this.mn_sectores_economicos,
+            this.menuItem7,
+            this.mn_usuarios,
+            this.menuItem8,
+            this.mn_clientes});
             // 
             // mn_calificacion_cliente
             // 
@@ -234,12 +242,6 @@ namespace Presentacion.Pantallas
             this.menuItem2.Index = 5;
             this.menuItem2.Text = "-";
             // 
-            // mn_usuarios
-            // 
-            this.mn_usuarios.Index = 8;
-            this.mn_usuarios.Text = "Usuarios";
-            this.mn_usuarios.Click += new System.EventHandler(this.mn_usuarios_Click);
-            // 
             // mn_tipos_ingresos
             // 
             this.mn_tipos_ingresos.Index = 6;
@@ -250,6 +252,34 @@ namespace Presentacion.Pantallas
             // 
             this.menuItem6.Index = 7;
             this.menuItem6.Text = "-";
+            // 
+            // mn_sectores_economicos
+            // 
+            this.mn_sectores_economicos.Index = 8;
+            this.mn_sectores_economicos.Text = "Tipos Sectores Económicos";
+            this.mn_sectores_economicos.Click += new System.EventHandler(this.mn_sectores_economicos_Click);
+            // 
+            // menuItem7
+            // 
+            this.menuItem7.Index = 9;
+            this.menuItem7.Text = "-";
+            // 
+            // mn_usuarios
+            // 
+            this.mn_usuarios.Index = 10;
+            this.mn_usuarios.Text = "Usuarios";
+            this.mn_usuarios.Click += new System.EventHandler(this.mn_usuarios_Click);
+            // 
+            // menuItem8
+            // 
+            this.menuItem8.Index = 11;
+            this.menuItem8.Text = "-";
+            // 
+            // mn_clientes
+            // 
+            this.mn_clientes.Index = 12;
+            this.mn_clientes.Text = "Clientes";
+            this.mn_clientes.Click += new System.EventHandler(this.mn_clientes_Click);
             // 
             // Frm_Menu
             // 
@@ -289,5 +319,9 @@ namespace Presentacion.Pantallas
         private Gizmox.WebGUI.Forms.MenuItem mn_tipos_gastos;
         private Gizmox.WebGUI.Forms.MenuItem mn_tipos_ingresos;
         private Gizmox.WebGUI.Forms.MenuItem menuItem6;
+        private Gizmox.WebGUI.Forms.MenuItem mn_sectores_economicos;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem7;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem8;
+        private Gizmox.WebGUI.Forms.MenuItem mn_clientes;
 	}
 }

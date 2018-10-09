@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="E_Cliente.cs" />
+    <Compile Include="E_Sector_Economico.cs" />
     <Compile Include="E_Garantia.cs" />
     <Compile Include="E_Gasto.cs" />
     <Compile Include="E_Ingreso.cs" />
