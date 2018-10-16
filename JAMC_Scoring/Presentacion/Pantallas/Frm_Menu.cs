@@ -24,6 +24,7 @@ namespace Presentacion.Pantallas
                 pnl_izquierdo.Width = 80;
                 btn_mantenimiento.Text = "";
                 btn_proceso.Text = "";
+                btn_configuraciones.Text = "";
                 btn_usuario.Text = "";
             }
             else
@@ -31,6 +32,7 @@ namespace Presentacion.Pantallas
                 pnl_izquierdo.Width = 189;
                 btn_mantenimiento.Text = "  Mantenimientos";
                 btn_proceso.Text = "  Procesos";
+                btn_configuraciones.Text = "  Configuraciones";
                 btn_usuario.Text = "     " + Funciones.Utilitario.Datos_Usuarios.USUARIO;
             }
         }
@@ -105,6 +107,17 @@ namespace Presentacion.Pantallas
         {
             Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Mant_Clientes));
         }
+
+        private void mn_ponderaciones_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Porciento_Ponderaciones));
+        }
+
+        private void mn_parametros_Click(object sender, EventArgs e)
+        {
+            Funciones.Utilitario.Abrir_Formulario(typeof(Frm_Parametros));
+        }
+
 
 
 	}

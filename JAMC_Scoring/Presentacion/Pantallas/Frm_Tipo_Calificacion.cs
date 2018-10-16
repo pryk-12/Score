@@ -58,18 +58,10 @@ namespace Presentacion.Pantallas
                     return;
                 }
 
-                if(txt_puntos.Text.Length != 0)
+                if (txt_puntos.Text.Length != 0)
                 {
-                    double puntos = 0;
-                    if (double.TryParse(txt_puntos.Text, out puntos))
+                    if (Funciones.Utilitario.Validar_Decimal(txt_puntos, "El Formato de los Puntos es Incorrecto") == false)
                     {
-
-                        txt_puntos.Text = puntos.ToString("N2");
-                    }
-                    else
-                    {
-                        Funciones.Utilitario.Mensaje_Informacion("Formato de los Puntos es incorrecto");
-                        txt_puntos.Focus();
                         return;
                     }
                 }
@@ -81,7 +73,7 @@ namespace Presentacion.Pantallas
                 obj._ESTADO = cb_estado.Text;
                 obj._FECHA_CREADO = DateTime.Now;
                 obj._DESCRIPCION = txt_descripcion.Text.Trim();
-                obj._PUNTOS =  txt_puntos.Text.Length==0 ? 0 : Convert.ToDouble(txt_puntos.Text);
+                obj._PUNTOS = Convert.ToDouble(txt_puntos.Text);
 
                 if (txt_id.Text.Equals(""))
                 {

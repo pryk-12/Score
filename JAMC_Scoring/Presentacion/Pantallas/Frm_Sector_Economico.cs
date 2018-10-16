@@ -57,6 +57,14 @@ namespace Presentacion.Pantallas
                     return;
                 }
 
+                if (txt_puntos.Text.Length != 0)
+                {
+                    if (Funciones.Utilitario.Validar_Decimal(txt_puntos, "El Formato de los Puntos es Incorrecto") == false)
+                    {
+                        return;
+                    }
+                }
+
                 E_Sector_Economico obj = new E_Sector_Economico();
                 string mensaje = "";
 
@@ -64,7 +72,7 @@ namespace Presentacion.Pantallas
                 obj._ESTADO = cb_estado.Text;
                 obj._FECHA_CREADO = DateTime.Now;
                 obj._DESCRIPCION = txt_descripcion.Text.Trim();
-                obj._PUNTOS = txt_puntos.Text.Length == 0 ? 0 : Convert.ToDouble(txt_puntos.Text);
+                obj._PUNTOS = Convert.ToDouble(txt_puntos.Text);
 
                 if (txt_id.Text.Equals(""))
                 {

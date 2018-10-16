@@ -17,6 +17,7 @@ namespace Presentacion.Pantallas
             txt_apellidos.Text = obj._APELLIDOS;
             txt_id.Text = obj._ID_CLIENTE.ToString();
             txt_nombres.Text = obj._NOMBRES;
+            txt_direccion.Text = obj._DIRECCION;
             txt_cedula.Text = obj._CEDULA;
             cb_estado.Text = obj._ESTADO;
             cb_sexo.Text = obj._SEXO;

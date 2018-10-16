@@ -32,6 +32,9 @@ namespace Presentacion.Pantallas
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Menu));
             this.pnl_izquierdo = new Gizmox.WebGUI.Forms.Panel();
+            this.btn_configuraciones = new Gizmox.WebGUI.Forms.Button();
+            this.cm_configuraciones = new Gizmox.WebGUI.Forms.ContextMenu();
+            this.mn_ponderaciones = new Gizmox.WebGUI.Forms.MenuItem();
             this.btn_usuario = new Gizmox.WebGUI.Forms.Button();
             this.cm_usuario = new Gizmox.WebGUI.Forms.ContextMenu();
             this.mn_cambiar_clave = new Gizmox.WebGUI.Forms.MenuItem();
@@ -58,6 +61,8 @@ namespace Presentacion.Pantallas
             this.mn_usuarios = new Gizmox.WebGUI.Forms.MenuItem();
             this.menuItem8 = new Gizmox.WebGUI.Forms.MenuItem();
             this.mn_clientes = new Gizmox.WebGUI.Forms.MenuItem();
+            this.menuItem9 = new Gizmox.WebGUI.Forms.MenuItem();
+            this.mn_parametros = new Gizmox.WebGUI.Forms.MenuItem();
             this.pnl_izquierdo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +72,7 @@ namespace Presentacion.Pantallas
             this.pnl_izquierdo.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.pnl_izquierdo.BorderColor = new Gizmox.WebGUI.Forms.BorderColor(System.Drawing.Color.Black);
             this.pnl_izquierdo.BorderStyle = Gizmox.WebGUI.Forms.BorderStyle.FixedSingle;
+            this.pnl_izquierdo.Controls.Add(this.btn_configuraciones);
             this.pnl_izquierdo.Controls.Add(this.btn_usuario);
             this.pnl_izquierdo.Controls.Add(this.btn_proceso);
             this.pnl_izquierdo.Controls.Add(this.pictureBox1);
@@ -76,6 +82,37 @@ namespace Presentacion.Pantallas
             this.pnl_izquierdo.Name = "pnl_izquierdo";
             this.pnl_izquierdo.Size = new System.Drawing.Size(80, 539);
             this.pnl_izquierdo.TabIndex = 0;
+            // 
+            // btn_configuraciones
+            // 
+            this.btn_configuraciones.Anchor = ((Gizmox.WebGUI.Forms.AnchorStyles)(((Gizmox.WebGUI.Forms.AnchorStyles.Top | Gizmox.WebGUI.Forms.AnchorStyles.Left) 
+            | Gizmox.WebGUI.Forms.AnchorStyles.Right)));
+            this.btn_configuraciones.BackColor = System.Drawing.Color.Transparent;
+            this.btn_configuraciones.DropDownMenu = this.cm_configuraciones;
+            this.btn_configuraciones.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btn_configuraciones.ForeColor = System.Drawing.Color.Black;
+            this.btn_configuraciones.Image = new Gizmox.WebGUI.Common.Resources.ImageResourceHandle(resources.GetString("btn_configuraciones.Image"));
+            this.btn_configuraciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_configuraciones.Location = new System.Drawing.Point(6, 190);
+            this.btn_configuraciones.Name = "btn_configuraciones";
+            this.btn_configuraciones.Size = new System.Drawing.Size(65, 40);
+            this.btn_configuraciones.TabIndex = 0;
+            this.btn_configuraciones.Text = "  Configuraciones";
+            this.btn_configuraciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_configuraciones.TextImageRelation = Gizmox.WebGUI.Forms.TextImageRelation.ImageBeforeText;
+            // 
+            // cm_configuraciones
+            // 
+            this.cm_configuraciones.MenuItems.AddRange(new Gizmox.WebGUI.Forms.MenuItem[] {
+            this.mn_ponderaciones,
+            this.menuItem9,
+            this.mn_parametros});
+            // 
+            // mn_ponderaciones
+            // 
+            this.mn_ponderaciones.Index = 0;
+            this.mn_ponderaciones.Text = "Ponderaciones";
+            this.mn_ponderaciones.Click += new System.EventHandler(this.mn_ponderaciones_Click);
             // 
             // btn_usuario
             // 
@@ -87,7 +124,7 @@ namespace Presentacion.Pantallas
             this.btn_usuario.ForeColor = System.Drawing.Color.Black;
             this.btn_usuario.Image = new Gizmox.WebGUI.Common.Resources.ImageResourceHandle(resources.GetString("btn_usuario.Image"));
             this.btn_usuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_usuario.Location = new System.Drawing.Point(6, 489);
+            this.btn_usuario.Location = new System.Drawing.Point(6, 483);
             this.btn_usuario.Name = "btn_usuario";
             this.btn_usuario.Size = new System.Drawing.Size(65, 40);
             this.btn_usuario.TabIndex = 0;
@@ -281,6 +318,17 @@ namespace Presentacion.Pantallas
             this.mn_clientes.Text = "Clientes";
             this.mn_clientes.Click += new System.EventHandler(this.mn_clientes_Click);
             // 
+            // menuItem9
+            // 
+            this.menuItem9.Index = 1;
+            this.menuItem9.Text = "-";
+            // 
+            // mn_parametros
+            // 
+            this.mn_parametros.Index = 2;
+            this.mn_parametros.Text = "Parametros";
+            this.mn_parametros.Click += new System.EventHandler(this.mn_parametros_Click);
+            // 
             // Frm_Menu
             // 
             this.Controls.Add(this.pnl_izquierdo);
@@ -323,5 +371,10 @@ namespace Presentacion.Pantallas
         private Gizmox.WebGUI.Forms.MenuItem menuItem7;
         private Gizmox.WebGUI.Forms.MenuItem menuItem8;
         private Gizmox.WebGUI.Forms.MenuItem mn_clientes;
+        private Gizmox.WebGUI.Forms.Button btn_configuraciones;
+        private Gizmox.WebGUI.Forms.ContextMenu cm_configuraciones;
+        private Gizmox.WebGUI.Forms.MenuItem mn_ponderaciones;
+        private Gizmox.WebGUI.Forms.MenuItem menuItem9;
+        private Gizmox.WebGUI.Forms.MenuItem mn_parametros;
 	}
 }

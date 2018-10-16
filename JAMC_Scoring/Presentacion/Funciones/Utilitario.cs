@@ -143,6 +143,21 @@ namespace Presentacion.Funciones
             }
         }
 
+        public static bool Validar_Decimal(TextBox txt, string mensaje)
+        {
+            double puntos = 0;
+            if (double.TryParse(txt.Text, out puntos))
+            {
+                txt.Text = puntos.ToString("N2");
+                return true;
+            }
+            else
+            {
+                Funciones.Utilitario.Mensaje_Informacion(mensaje);
+                txt.Focus();
+                return false;
+            }
+        }
        
     }
 }

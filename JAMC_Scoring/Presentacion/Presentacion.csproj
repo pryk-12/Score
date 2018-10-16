@@ -40,10 +40,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Gizmox.WebGUI.Common, Version=4.5.15701.0, Culture=neutral, PublicKeyToken=263fa4ef694acff6, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Gizmox.WebGUI.Forms.Charts, Version=4.5.15701.0, Culture=neutral, PublicKeyToken=f1bb83df6a8597fb, processorArchitecture=MSIL" />
+    <Reference Include="Gizmox.WebGUI.Forms.Extended, Version=4.5.15701.0, Culture=neutral, PublicKeyToken=85eae29607c9f5f3, processorArchitecture=MSIL" />
+    <Reference Include="Gizmox.WebGUI.Forms.Office, Version=4.5.15701.0, Culture=neutral, PublicKeyToken=d50c2c7452ba77d9, processorArchitecture=MSIL" />
     <Reference Include="Gizmox.WebGUI.Forms.Themes, Version=4.5.15701.0, Culture=neutral, PublicKeyToken=263fa4ef694acff6, processorArchitecture=MSIL">
       <SpecificVersion>True</SpecificVersion>
       <Private>True</Private>
@@ -61,8 +69,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -109,6 +119,12 @@
     </Compile>
     <Compile Include="Pantallas\Frm_Ingreso.designer.cs">
       <DependentUpon>Frm_Ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Listado_Scoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Listado_Scoring.designer.cs">
+      <DependentUpon>Frm_Listado_Scoring.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Frm_Login.cs">
       <SubType>Form</SubType>
@@ -164,11 +180,29 @@
     <Compile Include="Pantallas\Frm_Menu.designer.cs">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Frm_Parametros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Parametros.designer.cs">
+      <DependentUpon>Frm_Parametros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Frm_Plantilla.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\Frm_Plantilla.Designer.cs">
       <DependentUpon>Frm_Plantilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Porciento_Ponderaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Porciento_Ponderaciones.designer.cs">
+      <DependentUpon>Frm_Porciento_Ponderaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Scoring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Frm_Scoring.designer.cs">
+      <DependentUpon>Frm_Scoring.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Frm_Sector_Economico.cs">
       <SubType>Form</SubType>
@@ -231,9 +265,18 @@
     <EmbeddedResource Include="Pantallas\Frm_Menu.resx">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Parametros.resx">
+      <DependentUpon>Frm_Parametros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Plantilla.resx">
       <DependentUpon>Frm_Plantilla.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Porciento_Ponderaciones.resx">
+      <DependentUpon>Frm_Porciento_Ponderaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Frm_Scoring.resx">
+      <DependentUpon>Frm_Scoring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\Frm_Sector_Economico.resx">
       <DependentUpon>Frm_Sector_Economico.cs</DependentUpon>

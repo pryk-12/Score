@@ -45,6 +45,8 @@
     <Compile Include="D_Garantia.cs" />
     <Compile Include="D_Gasto.cs" />
     <Compile Include="D_Ingreso.cs" />
+    <Compile Include="D_Parametro.cs" />
+    <Compile Include="D_Ponderacion.cs" />
     <Compile Include="D_Sector_Economico.cs" />
     <Compile Include="D_Tipo_Calificacion.cs" />
     <Compile Include="D_Usuario.cs" />

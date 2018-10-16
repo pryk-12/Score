@@ -6,3 +6,4 @@ C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Entidades\bin\Debug\Entidades.
 C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Entidades\bin\Debug\Entidades.pdb
 C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Entidades\obj\Debug\Entidades.dll
 C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Entidades\obj\Debug\Entidades.pdb
+C:\Users\jfrancisco\Documents\JScore\JAMC_Scoring\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

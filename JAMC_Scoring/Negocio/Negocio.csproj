@@ -43,6 +43,8 @@
     <Compile Include="N_Garantia.cs" />
     <Compile Include="N_Gasto.cs" />
     <Compile Include="N_Ingreso.cs" />
+    <Compile Include="N_Parametro.cs" />
+    <Compile Include="N_Ponderacion.cs" />
     <Compile Include="N_Sector_Economico.cs" />
     <Compile Include="N_Tipo_Calificacion.cs" />
     <Compile Include="N_Usuario.cs" />
